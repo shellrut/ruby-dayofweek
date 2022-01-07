@@ -3,19 +3,19 @@
 require 'date'
 
 #-----------------------------------------------#
-#	Developer -- Shelby Rutland					#
-#	Date ------- April 5, 2021					#
-#												#
-#	This Ruby program uses Zeller’s Congruence	#
-#	to compute and print the day of the week on	#
-#	which a chosen date falls.					#
+#	Developer -- Shelby Rutland	
+#	Date ------- April 5, 2021		
+#						
+#	This Ruby program uses Zeller’s Congruence
+#	to compute and print the day of the week on
+#	which a chosen date falls.		
 #-----------------------------------------------#
 
 #-----------------------------------------------#
-#	zeller()									#
-#												#
-#	This will compute the day of the week		#
-#	using the formula for Zeller's Congruence.	#
+#	zeller()				
+#						
+#	This will compute the day of the week	
+#	using the formula for Zeller's Congruence.
 #-----------------------------------------------#
 
 def zeller(c,y,m,d)
@@ -25,11 +25,11 @@ def zeller(c,y,m,d)
 end
 
 #-----------------------------------------------#
-#	weekday()									#
-#												#
-#	This will print the day of the week and		#
-#	ensure the month, day, and year are in the	#
-#	correct range.								#
+#	weekday()						
+#						
+#	This will print the day of the week and	
+#	ensure the month, day, and year are in the
+#	correct range.					
 #-----------------------------------------------#
 
 def weekday(month,day,year)
@@ -64,12 +64,12 @@ def weekday(month,day,year)
 end
 
 #-----------------------------------------------#
-#	main										#
-#												#
-#	This will let the user enter integers		#
-#	indicating the month, day, and year:		#
-#	repeating until the user enters a null 		#
-#	string for the month number.				#
+#	main					
+#					
+#	This will let the user enter integers	
+#	indicating the month, day, and year:	
+#	repeating until the user enters a null 	
+#	string for the month number.		
 #-----------------------------------------------#
 
 def main
