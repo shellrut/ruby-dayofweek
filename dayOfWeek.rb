@@ -2,21 +2,21 @@
 
 require 'date'
 
-#-----------------------------------------------#
+#--------------------------------------------------#
 #	Developer -- Shelby Rutland	
 #	Date ------- April 5, 2021		
 #						
 #	This Ruby program uses Zeller’s Congruence
-#	to compute and print the day of the week on
-#	which a chosen date falls.		
-#-----------------------------------------------#
+#	to compute and print the day of the week
+#	on which a chosen date falls.		
+#--------------------------------------------------#
 
-#-----------------------------------------------#
+#--------------------------------------------------#
 #	zeller()				
 #						
-#	This will compute the day of the week	
-#	using the formula for Zeller's Congruence.
-#-----------------------------------------------#
+#	This will compute the day of the week using
+#	the formula for Zeller's Congruence.
+#--------------------------------------------------#
 
 def zeller(c,y,m,d)
 	z = (d + ((m+1)*26/10).floor + y + (y/4).floor + (c/4) - 2*c + 7).floor % 7
@@ -24,13 +24,13 @@ def zeller(c,y,m,d)
 	return weekday
 end
 
-#-----------------------------------------------#
+#--------------------------------------------------#
 #	weekday()						
 #						
-#	This will print the day of the week and	
+#	This will print the day of the week and
 #	ensure the month, day, and year are in the
 #	correct range.					
-#-----------------------------------------------#
+#--------------------------------------------------#
 
 def weekday(month,day,year)
 	if year < 1582 || year == 1582 && month < 10 || year == 1582 && month == 10 && day < 15
@@ -63,14 +63,14 @@ def weekday(month,day,year)
 	end
 end
 
-#-----------------------------------------------#
+#-------------------------------------------------#
 #	main					
 #					
 #	This will let the user enter integers	
 #	indicating the month, day, and year:	
 #	repeating until the user enters a null 	
 #	string for the month number.		
-#-----------------------------------------------#
+#--------------------------------------------------#
 
 def main
 	print "Month ---- "
